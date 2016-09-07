@@ -79,6 +79,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TCCopyableLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TPKeyboardAvoiding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,17 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1962544EAAB76F8400CEC953FB10BA0D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>48F687CDE9990BD471D7883061F7E5D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A7B879C9F8958E480C74CBDCBFB62B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,22 +137,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>562D9380E2CDEBDABE25188C9572390D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>59B5154DEC6908AAF54B5F46275BEC56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A7220B6B6BB46C1B348953F902573BA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E92074E3D35EB15841F790BCBD1D627</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6339C8AC43C1BAAE0955CAA93F9DB548</key>
+		<key>6F507E77E88BB430B9ACD49835B7055A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,17 +157,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7A43462C46B04BDA0AC20E66B0083661</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F9EC8B5039DB7202BEBE2218A02DD86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C1FC77AFFF6824FBA7B1D273562BEEE1</key>
+		<key>B5B70C6C0A5554FAA170E06DEB03214D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D9742098E445FA4B8873B171624D46B8</key>
+		<key>D8B9D08696FE7FF8CD984D54FECC6F22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,7 +187,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFFD0D8AB013AC45751289F849DCD17B</key>
+		<key>FB624F233565903BFBF133F1D75EF76E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

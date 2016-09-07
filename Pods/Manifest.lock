@@ -62,6 +62,7 @@ PODS:
   - SDWebImage/Core (3.7.6)
   - SFHFKeychainUtils (0.0.1)
   - SwipeBack (1.1.0)
+  - TCCopyableLabel (1.0.1)
   - TPKeyboardAvoiding (1.3)
   - UIAlertView+Block (1.1.0)
 
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.3)
   - SFHFKeychainUtils
   - SwipeBack
+  - TCCopyableLabel
   - TPKeyboardAvoiding
   - UIAlertView+Block (~> 1.1.0)
 
@@ -104,6 +106,7 @@ SPEC CHECKSUMS:
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SwipeBack: 45a42c333b7b9657b9f02cf19673339b3a006195
+  TCCopyableLabel: 31958ac1969b8bf8e08ef7e711ee42e86b2f5215
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
   UIAlertView+Block: fa6fcfe2c5110d3b6e9b9d9bfb46ac9250007f65
 
