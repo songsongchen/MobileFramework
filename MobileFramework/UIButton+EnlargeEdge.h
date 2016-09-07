@@ -1,6 +1,6 @@
 //
 // Created by Mac on 14-9-23.
-// Copyright (c) 2014 Beijing ShiShiKe Technologies Co., Ltd. All rights reserved.
+
 //
 
 #import <Foundation/Foundation.h>

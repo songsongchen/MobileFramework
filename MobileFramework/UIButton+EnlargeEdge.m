@@ -1,7 +1,6 @@
 //
 // Created by Mac on 14-9-23.
-// Copyright (c) 2014 Beijing ShiShiKe Technologies Co., Ltd. All rights reserved.
-//http://blog.csdn.net/liulushi_1988/article/details/38586421
+
 //使用
 //[enlargeButton setEnlargeEdge:20.0];
 //或者[enlargeButton setEnlargeEdgeWithTop:20 right:20 bottom:20 left:10];
