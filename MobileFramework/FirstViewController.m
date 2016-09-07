@@ -6,17 +6,19 @@
 //  Copyright © 2016年 songChen. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 
-@interface ViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.titleLabel.text = @"AAtitle";
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

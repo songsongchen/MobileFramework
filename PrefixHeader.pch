@@ -1,0 +1,163 @@
+//
+//  Header.h
+//  UIMobileFramework
+//
+//  Created by chenjs on 16/3/10.
+//  Copyright © 2016年 songChen. All rights reserved.
+//
+
+#ifndef Header_h
+#define Header_h
+
+// 系统相关的头文件
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+
+// pod相关的头文件
+#import <AFNetworking.h>
+#import <AFNetworkActivityIndicatorManager.h>
+#import <SFHFKeychainUtils.h>
+#import <SDWebImageManager.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <SwipeBack.h>
+#import <TPKeyboardAvoidingScrollView.h>
+#import <TPKeyboardAvoidingTableView.h>
+#import <TPKeyboardAvoidingCollectionView.h>
+#import <MBProgressHUD.h>
+#import <Masonry.h>
+#import <ReactiveCocoa.h>
+#import <UIAlertView+Block.h>
+#import <TCCopyableLabel.h>
+#import <MJRefresh.h>
+
+// 项目里的其他头文件
+//#import "Api.h"
+//#import "JSONKit.h"
+#import "UIView+Utility.h"
+#import "NSString+Utility.h"
+#import "UIImage+Utility.h"
+#import "UIButton+EnlargeEdge.h"
+#import "UIButton+EdgeInsets.h"
+#import "NSDate+Utilities.h"
+#import "UtilContant.h"
+#import "UIView+Tips.h"
+
+#define FONTSTYLE @"Helvetica"
+#define FONTSTYLEBOLD @"Helvetica-Bold"  //字体
+
+#define deviceWidth [UIScreen mainScreen].bounds.size.width
+#define deviceHeight [UIScreen mainScreen].bounds.size.height
+#define topBarHeight 44
+#define tabBarHeight 49
+#define toolbarHeight 44
+#define GAP20 20
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+// << 计算文本宽度
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+#define MB_TEXTSIZE(text, font) [text length] > 0 ? [text \
+sizeWithAttributes:@{NSFontAttributeName:font}] : CGSizeZero;
+#else
+#define MB_TEXTSIZE(text, font) [text length] > 0 ? [text sizeWithFont:font] : CGSizeZero;
+#endif
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+#define MB_MULTILINE_TEXTSIZE(text, font, maxSize) [text length] > 0 ? [text \
+boundingRectWithSize:maxSize options:(NSStringDrawingUsesLineFragmentOrigin) \
+attributes:@{NSFontAttributeName:font} context:nil].size : CGSizeZero;
+#else
+#define MB_MULTILINE_TEXTSIZE(text, font, maxSize) [text length] > 0 ? [text \
+sizeWithFont:font constrainedToSize:maxSize lineBreakMode:NSLineBreakByTruncatingTail] : CGSizeZero;
+#endif
+// 计算文本宽度 >>
+
+#define GAP20 20
+#define HexGRAY(w,a) [UIColor colorWithWhite:(w)/255.0 alpha:(a)/255.0]
+#define HexRGBA(rgb,a) [UIColor colorWithRed:(((rgb) & 0xFF0000) >> 16)/255.0 green:(((rgb) & 0xFF00) >> 8)/255.0 blue:(((rgb) & 0xFF))/255.0 alpha:(a)/255.0]
+
+#define UIColorFromRGBA(rgbValue, a) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+#define UIColorFromRGB(rgbValue)  UIColorFromRGBA(rgbValue,1.0)
+
+#define UIViewAutoresizingAlignCenter UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin
+
+#define SSJKString(a) (a) ? [(a) description] : @""
+#define APPDisplayName [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]
+#define APPVersionName [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]
+#define APPVersionCode [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]
+#define kAppVersionKey @"AppVersion"
+#define User_Default [NSUserDefaults standardUserDefaults]
+#define APNSToken @"APNSToken"
+
+// UI
+#define kColor5 HexRGBA(0xEFA10A, 255)
+
+#define NAVBARCOLOR HexRGBA(0x3f454f, 255)
+#define NAVTEXTCOLOR HexGRAY(0xFF, 255)
+
+#define BKGCOLOR HexRGBA(0xFFFFFF, 255)
+#define BTNACTIVECOLOR kColor5
+
+
+#define kDataSource @"dataSource" //数据源
+static NSString *kHeaderViewKey = @"HeaderView";
+static NSString *kFooterViewKey = @"FooterView";
+
+
+//检查数组下标获取数组对象 无效下标返回nil
+#define safeGetArrayObject(array, index)    \
+index<[array count]?[array objectAtIndex:index]:nil; \
+//    if ([array count] <= index) \
+//    {   \
+//        DEBUG_LOG(@"invalid array index:%@, count%@! file:%s, line:%d", @(index), @([array count]), __FILE__, __LINE__); \
+//    }
+
+#define UIColorFromRGBA(rgbValue, a) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+#define UIColorFromRGB(rgbValue)  UIColorFromRGBA(rgbValue,1.0)
+
+#define currentSysVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+//isRetina
+#define isRetina [UIScreen mainScreen].scale == 2.0
+
+//所有线的高度或者宽度
+#define gLineWidthOrHeight  isRetina? 0.5f :1.0f
+
+#ifdef DEBUG
+#define DEBUG_LOG(format, ...) NSLog((@"%@(%d)%s:\n" format), [[NSString stringWithCString:__FILE__ encoding:NSASCIIStringEncoding] lastPathComponent], __LINE__, __FUNCTION__, ##__VA_ARGS__)
+#else
+#define DEBUG_LOG(format, ...)
+#endif
+#define WHERE DEBUG_LOG(@"WHERE");
+#define SSJKString(a) (a) ? [(a) description] : @""
+#define kRMB @"￥"
+#define kString_Null                        @"null"
+#define kString_Null_IOS                    @"(null)"
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+
+
+
+
+#endif /* Header_h */
+
+typedef enum
+{
+    ShowViewControllerDirection_BottomTop = 1,  // 从下往上
+    ShowViewControllerDirection_TopBottom = 2, // 从上往下
+    ShowViewControllerDirection_RightLeft = 3, // 从右往左
+    ShowViewControllerDirection_LeftRight = 4 // 从左往右
+} ShowViewControllerDirection;
+
+
+
+
+
