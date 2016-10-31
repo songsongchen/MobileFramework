@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class LFTabbarController;
+@class RootTabbarController;
 
 /**
   * 作为所有视图控制器的基类
@@ -21,7 +21,7 @@
  * 如果该视图控制器加入了TabBarViewController，则可获取对应的TabBarViewController
  */
 
-@property (nonatomic, weak) LFTabbarController *tabController;
+@property (nonatomic, weak) RootTabbarController *tabController;
 
 @property (nonatomic, retain) UIView *topView;
 
