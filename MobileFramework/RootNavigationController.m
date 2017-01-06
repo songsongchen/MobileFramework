@@ -49,12 +49,12 @@
     
 }
 
-- (LFTabbarController *)tabBarcontroller {
+- (RootTabbarController *)tabBarcontroller {
     
     if (self.viewControllers.count > 0) {
         UIViewController *controller = self.viewControllers[0];
         if ([controller isKindOfClass:[RootTabbarController class]]) {
-            return (LFTabbarController *)controller;
+            return (RootTabbarController *)controller;
         }
         
     }
