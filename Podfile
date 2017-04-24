@@ -1,6 +1,8 @@
 platform :ios, '8.0'
 
-pod 'AFNetworking', '~> 2.5.0'
+target ‘MobileFramework’ do
+
+pod 'AFNetworking', '~> 3.0.0'
 pod 'SDWebImage', '~> 3.7.3'
 pod 'SwipeBack'
 pod 'TPKeyboardAvoiding'
@@ -21,3 +23,6 @@ pod 'Fabric', '~> 1.6.4'
 pod 'CYLTabBarController', '~> 1.0.5'
 pod 'MJRefresh', '~> 3.1.0'
 pod 'TCCopyableLabel'
+pod 'UMengAnalytics'
+
+end

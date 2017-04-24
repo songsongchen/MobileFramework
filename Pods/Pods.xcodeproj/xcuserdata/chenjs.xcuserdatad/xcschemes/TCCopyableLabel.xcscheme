@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '652714EB0087D9AA17E85437'
+               BlueprintIdentifier = '5518EDF1F56829FA6A640CF8EB7FC69E'
                BlueprintName = 'TCCopyableLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTCCopyableLabel.a'>

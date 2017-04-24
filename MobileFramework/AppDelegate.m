@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RootNavigationController.h"
 
+#import "UMMobClick/MobClick.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [RootNavigationController shareInstance];
     [self.window makeKeyAndVisible];
-    
     
     
     return YES;
