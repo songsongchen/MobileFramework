@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.titleLabel.text = @"AAtitle";
     
-    
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {

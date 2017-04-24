@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.titleLabel.text = @"CCtitle";
+    self.view.backgroundColor = [UIColor purpleColor];
+
 }
 
 - (void)didReceiveMemoryWarning {

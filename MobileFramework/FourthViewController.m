@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.titleLabel.text = @"DDtitle";
+    self.view.backgroundColor = [UIColor blueColor];
+
 }
 
 - (void)didReceiveMemoryWarning {
