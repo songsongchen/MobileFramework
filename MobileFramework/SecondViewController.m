@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.titleLabel.text = @"BBtitle";
+    self.view.backgroundColor = [UIColor orangeColor];
+
 }
 
 - (void)didReceiveMemoryWarning {
